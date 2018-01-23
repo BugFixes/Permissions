@@ -5,11 +5,17 @@
   "repository": "git@github.com:BugFixes/Permissions.git",
   "author": "Keloran <keloran@bugfix.es>",
   "license": "MIT",
-  "keywords": {
+  "keywords": [
     "RESTful",
     "API"
-  },
+  ],
   "bugs": {
     "url": "https://github.com/bugfixes/permissions/issues"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.1",
+    "mongoose": "^5.0.1",
+    "uuid": "^3.2.1"
   }
 }
