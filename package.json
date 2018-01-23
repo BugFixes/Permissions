@@ -4,5 +4,12 @@
   "main": "index.js",
   "repository": "git@github.com:BugFixes/Permissions.git",
   "author": "Keloran <keloran@bugfix.es>",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": {
+    "RESTful",
+    "API"
+  },
+  "bugs": {
+    "url": "https://github.com/bugfixes/permissions/issues"
+  }
 }

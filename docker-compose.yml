@@ -1,0 +1,20 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:3.0
+  node:
+    image: node:9
+    working_dir: /home/node/app
+    environment:
+      - PORT=${NODE_PORT}
+      - HOST=${NODE_HOST}
+      - BUGFIXES_ACCOUNT=${BUGFIXES_ACCOUNT}
+      - BUGFIXES_KEY=${BUGFIXES_KEY}
+      - BUGFIXES_SECRET=${BUGFIXES_SECRET}
+    links:
+      - mongo
+    ports:
+      - 81:81
+    volumes:
+      - ./:/home/node/app
+    command: 'yarn start'
